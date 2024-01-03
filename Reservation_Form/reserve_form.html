@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href="../Reservation_Form/reserve_form.css">
+        <title>Pinas Condo Rentals</title>
+    </head>
+<body>
+    <div class = "header">
+        <header>
+            <h1>PinasCondoRentals.com</h1>
+        </header>
+    </div>
+<hr>
+    <div class = "navigation">
+        <nav>
+            <ul>
+                <li><a href="./../Main_Web/Ramirez_FO_Web.html">Home</a></li>
+                <li><a href="./../About_Us/about.html">About Us</a></li>
+                <li><a href="./../History/history.html">History</a></li>
+            </ul>
+        </nav>
+    </div>
+<hr>
+    <div class = "main">
+        <main>
+        
+            <h1> Reservation Form </h1>
+
+            <div class = "details">
+                <form name="Form1" method = "post" onsubmit="return CheckForm(document.Form1)">
+        
+                
+                <div class="Label1">
+                    <label for="GivenName">Given Name:</label><br>    
+                    <input type="text" id="GivenName" name="GivenName" placeholder="First Name">
+                </div>
+
+                <div class="Label2">
+                    <label for="MiddleName">Middle Name:</label><br>    
+                    <input type="text" id="MiddleName" name="MiddleName" placeholder="Middle Name">
+                </div>
+
+                <div class="Label3">
+                    <label for="LastName">Last Name:</label><br>   
+                    <input type="text" id="LastName" name="LastName" placeholder="Last Name">
+                </div>
+
+                <div class="Label4">
+                    <label for="EmailAddress">Email Address:</label><br>    
+                    <input type="text" id="EmailAddress" name="EmailAddress" placeholder="Email  Address" size="30">
+                </div>
+        
+                <div class="Label5">
+                    <label for="ContactNumber">Contact Number:</label><br>    
+                    <input type="text" id="ContactNumber" name="ContactNumber" placeholder="Contact  Number">
+                </div>
+        
+                <div class="Label6">
+                    <label for="HomeAddress">Home Address:</label><br>    
+                    <input type="text" id="HomeAddress" name="HomeAddress" placeholder="Home  Address">
+                </div>
+                
+                <div class="arrival">
+                    <label for="Date and Time of Arrival">Date and Time of Arrival:</label><br>    
+                    <input type="datetime-local" id="ArrivalTD" name="ArrivalTD">
+                </div>
+    
+                <div class="departure">
+                    <label for="Date and Time of ADeparture">Date and Time of Departure:</label><br>    
+                    <input type="datetime-local" id="DepartureTD" name="Departure">
+                </div>
+    
+                <div class="number_adults">
+                    <label for="Number_Adults">Number of Adults:</label><br>    
+                    <input type="text" id="Number_Adults" name="Number_Adults" placeholder="How many adults?">
+                </div>
+    
+                <div class="number_kids">
+                    <label for="Number_Kids">Number of Kids:</label><br>    
+                    <input type="text" id="Number_Kids" name="Number_Kids" placeholder="How many kids?">
+                </div>
+        
+                    
+                <div class="payment_opts">
+                    <label for="payment">Payment Method:</label><br>
+                        <select id="pay" >
+                            <option value="pls">Please select an option</option>
+                            <option value="cash">Cash</option>
+                            <option value="check">Check</option>
+                            <option value="digital">Digital Payment</option>
+                        </select><br>
+                </div>
+
+                <div class="request">
+                        <label for="special_req">Do you have any special requests?</label><br>    
+                        <textarea id="freeform" name="freeform" rows="4" cols="50"> </textarea>
+                </div>
+                            
+                <div class="buttons">
+                        <button type="submit" id="submit" >SUBMIT</button>
+                        <button type="reset" id="cancel" >CANCEL</button>
+                </div>
+            </form>      
+            </div>
+        
+
+        </main>
+    </div>
+    <hr>
+    <div class = "footer">
+        <footer>
+            <p> Serving you since 2015 </p>
+        </footer>
+    </div>
+
+        <script src=".//reserve_form.js"></script>
+</body>
+</html>
